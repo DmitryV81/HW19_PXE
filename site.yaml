@@ -1,0 +1,9 @@
+---
+- name: Setup pxe server
+  hosts: pxeserver
+  become: true
+  roles:
+  - pxe
+  - tftp
+  - dhcp 
+...
